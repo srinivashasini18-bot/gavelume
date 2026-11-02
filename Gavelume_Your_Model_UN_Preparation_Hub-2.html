@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gavelume: Your Model UN Preparation Hub</title>
+<meta name="theme-color" content="#4a9eea"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Gavelume">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#f2f8ff;--card:#fff;--tint:#e3f0fd;--accent:#4a9eea;--accent2:#2878c8;--ink:#0f2742;--mute:#5b7390;--line:#d6e6f7;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1726;--bg2:#10203a;--card:#13253f;--tint:#1a3558;--accent:#7bbcf5;--accent2:#9dd0fb;--ink:#eaf3fd;--mute:#9db4cd;--line:#244266}}
+:root[data-theme="dark"]{--bg:#0c1726;--bg2:#10203a;--card:#13253f;--tint:#1a3558;--accent:#7bbcf5;--accent2:#9dd0fb;--ink:#eaf3fd;--mute:#9db4cd;--line:#244266}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 "Plus Jakarta Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,6vw,3.8rem)}h2{font-size:clamp(1.7rem,4vw,2.4rem)}h3{font-size:1.15rem}
+a{color:var(--accent2);text-decoration:none}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+section{padding:70px 0}.alt{background:var(--bg2)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);font-weight:700;margin-bottom:10px}
+.lead{color:var(--mute);font-size:1.08rem;max-width:640px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:19}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
+.logo{font-family:Fraunces,serif;font-weight:700;font-size:1.2rem;color:var(--ink)}.logo span{color:var(--accent)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.92rem;font-weight:500}nav ul a{color:var(--mute)}
+@media(max-width:760px){nav ul{display:none}}
+.btn{display:inline-block;padding:11px 22px;border-radius:999px;font-weight:600;background:var(--accent);color:#fff;border:0;cursor:pointer;font:inherit;font-weight:600}
+.btn:hover{background:var(--accent2)}.btn.ghost{background:transparent;color:var(--accent2);border:1.5px solid var(--accent)}.btn.sm{padding:8px 16px;font-size:.9rem}
+.hero{background:linear-gradient(180deg,var(--tint),var(--bg));padding:90px 0 60px;text-align:center}
+.hero .lead{margin:0 auto 26px}.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 6px 22px rgba(74,158,234,.07)}
+.ic{width:44px;height:44px;border-radius:12px;background:var(--tint);display:grid;place-items:center;font-size:1.3rem;margin-bottom:12px}
+.card p{color:var(--mute);margin:0}
+.tools{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));margin-top:32px}
+.clock{font:700 3.2rem/1 Fraunces,serif;color:var(--accent2);text-align:center;margin:12px 0}.clock.low{color:#e0523c}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+input{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:9px 12px;min-width:0}
+input[type=number]{width:84px}input.grow{flex:1}
+ol.list{padding-left:20px;margin:12px 0 0}ol.list li{display:flex;justify-content:space-between;gap:8px;padding:4px 0}
+ol.list button{background:none;border:0;color:var(--mute);cursor:pointer;font-size:1rem}
+.res{margin-top:14px;padding:14px;border-radius:14px;background:var(--tint);font-weight:600}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:28px 0 16px}
+.tab{padding:9px 18px;border-radius:99px;border:1.5px solid var(--line);background:var(--card);color:var(--mute);font:inherit;font-weight:600;cursor:pointer}
+.tab.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.pane{display:none}.pane.on{display:block}
+.steps{display:grid;gap:12px}
+.step{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 20px}
+.step b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center}
+.step p{margin:2px 0 0;color:var(--mute)}.step h3{margin:0 0 2px;font-size:1.05rem}
+.gl{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));margin-top:28px}
+.gl div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}.gl b{color:var(--accent2)}.gl p{margin:4px 0 0;color:var(--mute);font-size:.95rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:12px}
+summary{cursor:pointer;font-weight:600}details p{color:var(--mute);margin:10px 0 0}
+.note{background:var(--tint);border-left:5px solid var(--accent);border-radius:14px;padding:20px 24px;margin-top:26px}
+.price{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:32px}
+.plan{display:flex;flex-direction:column;position:relative}.plan .amt{font:700 2.1rem/1.1 Fraunces,serif;color:var(--accent2);margin:8px 0}.plan .amt small{font:500 .85rem 'Plus Jakarta Sans',sans-serif;color:var(--mute)}
+.plan ul{padding-left:18px;color:var(--mute);margin:8px 0 18px;flex:1;font-size:.95rem}.plan li{margin:5px 0}
+.plan.pop{border:2px solid var(--accent)}.badge{position:absolute;top:-12px;right:18px;background:var(--accent);color:#fff;font-size:.72rem;font-weight:700;padding:4px 12px;border-radius:99px}
+dialog{border:1px solid var(--line);border-radius:22px;background:var(--card);color:var(--ink);padding:26px;width:min(420px,92vw);max-height:90vh;overflow:auto}
+dialog::backdrop{background:rgba(15,39,66,.45)}dialog label{display:block;font-weight:600;font-size:.9rem;margin-top:12px}dialog input{width:100%;margin-top:4px}
+.sum{background:var(--tint);border-radius:14px;padding:12px 16px;margin:10px 0;display:flex;justify-content:space-between;font-weight:600}
+#pm{margin-top:12px;font-size:.9rem;color:var(--mute)}.sec{font-size:.82rem;color:var(--mute);text-align:center;margin-top:22px}
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--mute);font-size:.88rem;text-align:center}
+/* ---- refined look ---- */
+.logo::before{content:'✦';color:var(--accent);margin-right:6px}
+.eyebrow{display:inline-block;background:var(--tint);padding:5px 14px;border-radius:99px;letter-spacing:.12em}
+h2{letter-spacing:-.01em}h2::after{content:'';display:block;width:54px;height:4px;border-radius:4px;margin-top:14px;background:linear-gradient(90deg,var(--accent),var(--accent2))}
+.hero h2::after,.cta h2::after{margin-inline:auto}
+.btn{background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 8px 20px color-mix(in srgb,var(--accent) 35%,transparent);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px color-mix(in srgb,var(--accent) 45%,transparent)}
+.btn.ghost{background:transparent;box-shadow:none}
+.hero{position:relative;overflow:hidden;padding:110px 0 80px;background:radial-gradient(55% 70% at 12% 0,color-mix(in srgb,var(--accent) 30%,transparent),transparent 65%),radial-gradient(45% 60% at 95% 30%,color-mix(in srgb,var(--accent2) 18%,transparent),transparent 65%),linear-gradient(180deg,var(--tint),var(--bg))}
+.hero::before{content:'';position:absolute;width:680px;height:680px;right:-200px;top:-150px;opacity:.55;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cline x1='166.0' y1='100.0' x2='196.0' y2='100.0' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='165.0' y1='111.5' x2='182.7' y2='114.6' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='162.0' y1='122.6' x2='190.2' y2='132.8' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='157.2' y1='133.0' x2='172.7' y2='142.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='150.6' y1='142.4' x2='173.5' y2='161.7' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='142.4' y1='150.6' x2='154.0' y2='164.3' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='133.0' y1='157.2' x2='148.0' y2='183.1' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='122.6' y1='162.0' x2='128.7' y2='178.9' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='111.5' y1='165.0' x2='116.7' y2='194.5' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='100.0' y1='166.0' x2='100.0' y2='184.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='88.5' y1='165.0' x2='83.3' y2='194.5' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='77.4' y1='162.0' x2='71.3' y2='178.9' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='67.0' y1='157.2' x2='52.0' y2='183.1' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='57.6' y1='150.6' x2='46.0' y2='164.3' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='49.4' y1='142.4' x2='26.5' y2='161.7' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='42.8' y1='133.0' x2='27.3' y2='142.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='38.0' y1='122.6' x2='9.8' y2='132.8' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='35.0' y1='111.5' x2='17.3' y2='114.6' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='34.0' y1='100.0' x2='4.0' y2='100.0' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='35.0' y1='88.5' x2='17.3' y2='85.4' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='38.0' y1='77.4' x2='9.8' y2='67.2' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='42.8' y1='67.0' x2='27.3' y2='58.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='49.4' y1='57.6' x2='26.5' y2='38.3' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='57.6' y1='49.4' x2='46.0' y2='35.7' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='67.0' y1='42.8' x2='52.0' y2='16.9' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='77.4' y1='38.0' x2='71.3' y2='21.1' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='88.5' y1='35.0' x2='83.3' y2='5.5' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='100.0' y1='34.0' x2='100.0' y2='16.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='111.5' y1='35.0' x2='116.7' y2='5.5' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='122.6' y1='38.0' x2='128.7' y2='21.1' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='133.0' y1='42.8' x2='148.0' y2='16.9' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='142.4' y1='49.4' x2='154.0' y2='35.7' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='150.6' y1='57.6' x2='173.5' y2='38.3' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='157.2' y1='67.0' x2='172.7' y2='58.0' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='162.0' y1='77.4' x2='190.2' y2='67.2' stroke='%234a9eea' stroke-width='1.2' stroke-linecap='round' stroke-opacity='.7'/%3E%3Cline x1='165.0' y1='88.5' x2='182.7' y2='85.4' stroke='%234a9eea' stroke-width='0.7' stroke-linecap='round' stroke-opacity='.7'/%3E%3Ccircle cx='100' cy='100' r='60' fill='none' stroke='%234a9eea' stroke-width='.5' stroke-dasharray='1.5 3'/%3E%3Ccircle cx='100' cy='100' r='50' fill='%234a9eea' fill-opacity='.2' stroke='%234a9eea' stroke-width='.9'/%3E%3Cellipse cx='100' cy='100' rx='18' ry='50' fill='none' stroke='%234a9eea' stroke-width='.7'/%3E%3Cellipse cx='100' cy='100' rx='36' ry='50' fill='none' stroke='%234a9eea' stroke-width='.7'/%3E%3Cline x1='100' y1='50' x2='100' y2='150' stroke='%234a9eea' stroke-width='.7'/%3E%3Cline x1='60.0' y1='70' x2='140.0' y2='70' stroke='%234a9eea' stroke-width='.7'/%3E%3Cline x1='50.0' y1='100' x2='150.0' y2='100' stroke='%234a9eea' stroke-width='.7'/%3E%3Cline x1='60.0' y1='130' x2='140.0' y2='130' stroke='%234a9eea' stroke-width='.7'/%3E%3Cpath d='M72 66L74 72L80 74L74 76L72 82L70 76L64 74L70 72Z' fill='%234a9eea' fill-opacity='.7'/%3E%3C/svg%3E") center/contain no-repeat;animation:spin 120s linear infinite}
+.hero::after{content:'';position:absolute;width:420px;height:420px;left:-140px;bottom:-200px;opacity:.35;background:inherit;background:radial-gradient(circle,var(--accent),transparent 70%);filter:blur(40px)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.5rem,7vw,4.6rem);letter-spacing:-.02em}
+.hero h1 em{font-style:italic;background:linear-gradient(120deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.pills span{padding:8px 18px;border-radius:99px;font-size:.88rem;font-weight:600;color:var(--accent2);background:color-mix(in srgb,var(--card) 70%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line)}
+.ribbon{overflow:hidden;background:var(--card);border-block:1px solid var(--line);padding:16px 0}
+.ribbon div{display:flex;gap:46px;width:max-content;animation:mq 38s linear infinite}
+.ribbon span{font:600 1rem Fraunces,serif;color:var(--accent2);white-space:nowrap}.ribbon span::after{content:'✦';margin-left:46px;color:var(--accent);opacity:.6}
+.alt{background:radial-gradient(color-mix(in srgb,var(--accent) 16%,transparent) 1px,transparent 1px) 0 0/24px 24px,linear-gradient(180deg,var(--bg2),var(--bg))}
+.card{border-radius:26px;background:linear-gradient(180deg,var(--card),color-mix(in srgb,var(--tint) 40%,var(--card)))}
+.ic{width:54px;height:54px;border-radius:18px;font-size:1.5rem;background:linear-gradient(135deg,var(--tint),color-mix(in srgb,var(--accent) 35%,var(--tint)));box-shadow:0 6px 14px color-mix(in srgb,var(--accent) 22%,transparent)}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.card,.step,.gl div{transition:transform .3s,box-shadow .3s,opacity .7s}
+.card:hover{transform:translateY(-6px);box-shadow:0 20px 44px color-mix(in srgb,var(--accent) 24%,transparent)}
+.step{border-left:4px solid var(--accent)}.step b{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.clock{width:196px;height:196px;border-radius:50%;display:grid;place-items:center;margin:16px auto;font-size:2.7rem;border:8px solid var(--tint);box-shadow:inset 0 0 0 2px var(--accent),0 0 44px color-mix(in srgb,var(--accent) 30%,transparent)}
+.plan.pop{background:linear-gradient(180deg,color-mix(in srgb,var(--tint) 70%,var(--card)),var(--card));box-shadow:0 18px 44px color-mix(in srgb,var(--accent) 28%,transparent)}
+.badge{background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.cta,.note{border-radius:26px}
+footer{background:linear-gradient(180deg,var(--bg),var(--tint))}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes mq{to{transform:translateX(-50%)}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn:not(.ghost),:root:not([data-theme="light"]) .tab.on,:root:not([data-theme="light"]) .badge,:root:not([data-theme="light"]) .step b{color:#06213f}}
+:root[data-theme="dark"] .btn:not(.ghost),:root[data-theme="dark"] .tab.on,:root[data-theme="dark"] .badge,:root[data-theme="dark"] .step b{color:#06213f}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+.perks{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:26px}.perks div{background:var(--tint);border-radius:16px;padding:14px 18px}.perks b{display:block;color:var(--accent2)}.perks span{font-size:.9rem;color:var(--mute)}
+.meth{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0}.meth span{font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:99px;border:1px solid var(--line);color:var(--mute)}
+.tabbar{display:none}
+@media(max-width:760px){.tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}.tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;font-size:1.25rem;line-height:1.25;color:var(--mute);text-decoration:none}.tabbar span{font-size:.68rem;font-weight:600}body{padding-bottom:72px}}
+.upi{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:var(--tint);border-radius:18px;padding:16px 20px;margin-top:22px}.upi[hidden]{display:none}.upi code{font-weight:700;color:var(--accent2)}
+.promo{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#fff;text-align:center;padding:9px 14px;font-size:.88rem;font-weight:600}
+#quiz h2::after{margin-inline:auto}.quiz{max-width:680px;margin:30px auto 0}.qq{font:600 1.3rem Fraunces,serif;margin-bottom:16px}.opts{display:grid;gap:10px}
+.opt{text-align:left;padding:14px 18px;border-radius:16px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);font:inherit;cursor:pointer;transition:.2s}.opt:hover{border-color:var(--accent);background:var(--tint);transform:translateX(4px)}
+.qp{height:6px;border-radius:6px;background:var(--tint);margin-bottom:18px;overflow:hidden}.qp i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .4s}.qr h3{font-size:1.7rem}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .promo{color:#06213f}}:root[data-theme="dark"] .promo{color:#06213f}
+/* ---- light blue and white ---- */
+:root:root:not([data-theme="dark"]){--bg:#fff;--bg2:#f2f8ff;--card:#fff;--tint:#e3f0fd;--accent:#4a9eea;--accent2:#2878c8;--ink:#0f2742;--mute:#5b7390;--line:#d6e6f7;color-scheme:light}
+:root:root:not([data-theme="dark"]) .btn:not(.ghost),:root:root:not([data-theme="dark"]) .tab.on,:root:root:not([data-theme="dark"]) .badge,:root:root:not([data-theme="dark"]) .step b,:root:root:not([data-theme="dark"]) .promo{color:#fff}
+.tg{width:40px;height:40px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);cursor:pointer;font-size:1.1rem;line-height:1}
+nav,.tabbar,.pills span{-webkit-backdrop-filter:blur(10px)}
+@supports not (background:color-mix(in srgb,red,blue)){nav,.tabbar{background:var(--bg)}.card{background:var(--card)}.ic{background:var(--tint)}.hero{background:var(--tint)}.btn:not(.ghost){background:var(--accent)}.plan.pop{background:var(--tint)}.pills span{background:var(--card)}}
+</style>
+</head>
+<body>
+<div class="promo">🎓 Students save 10% with code <b>STUDENT10</b> · Expert feedback from just ₹99</div>
+<nav><div class="wrap"><a class="logo" href="#top">Gavel<span>ume</span></a>
+<ul><li><a href="#features">Features</a></li><li><a href="#tools">Committee tools</a></li><li><a href="#guides">Guides</a></li><li><a href="#rules">Rules</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#faq">FAQ</a></li></ul>
+<div style="display:flex;gap:10px;align-items:center"><button class="tg" id="tg" aria-label="Switch between light and dark mode">🌙</button><a class="btn sm" href="#tools">Try the tools</a></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div class="eyebrow">Prepare. Speak. Win the room.</div>
+<h1>Find your <em>direction</em><br>in every committee.</h1>
+<p class="lead">Walk in prepared, speak with confidence and own the committee. Free guides, live committee tools and fast written feedback, all made for student delegates.</p>
+<div class="btns"><a class="btn" href="#quiz">Find my delegate style</a><a class="btn ghost" href="#tools">Open committee tools</a></div>
+<div class="pills"><span>✦ Free committee tools</span><span>✦ Expert paper feedback</span><span>✦ Built for delegates</span></div></div></header>
+<div class="ribbon"><div><span>UN Security Council</span><span>General Assembly</span><span>Human Rights Council</span><span>World Health Organization</span><span>ECOSOC</span><span>DISEC</span><span>UNEP</span><span>Crisis Committee</span><span>Historical Committee</span><span>Lok Sabha</span><span>UN Security Council</span><span>General Assembly</span><span>Human Rights Council</span><span>World Health Organization</span><span>ECOSOC</span><span>DISEC</span><span>UNEP</span><span>Crisis Committee</span><span>Historical Committee</span><span>Lok Sabha</span></div></div>
+
+<section id="features"><div class="wrap">
+<div class="eyebrow">What’s inside</div><h2>Built around how delegates actually prepare</h2>
+<div class="grid">
+<div class="card"><div class="ic">🔎</div><h3>Research</h3><p>A repeatable method for understanding your country, topic and the history of UN action.</p></div>
+<div class="card"><div class="ic">📝</div><h3>Position papers</h3><p>A section-by-section structure with word budgets and common mistakes to avoid.</p></div>
+<div class="card"><div class="ic">🎤</div><h3>Speeches</h3><p>Frameworks for opening statements, GSL speeches and moderated caucus interventions.</p></div>
+<div class="card"><div class="ic">📜</div><h3>Resolutions</h3><p>How to draft preambulatory and operative clauses that bring blocs together.</p></div>
+<div class="card"><div class="ic">⚖️</div><h3>Rules of procedure</h3><p>A quick glossary of motions, points and voting thresholds.</p></div>
+<div class="card"><div class="ic">⏱️</div><h3>Live tools</h3><p>A speaking timer, speakers list and voting calculator that work right here.</p></div>
+</div></div></section>
+
+<section class="alt" id="tools"><div class="wrap">
+<div class="eyebrow">Committee tools</div><h2>Run your committee, live</h2>
+<p class="lead">No sign-up needed. Everything works in your browser.</p>
+<div class="tools">
+<div class="card"><h3>Speaking timer</h3>
+<div class="clock" id="clk">01:00</div>
+<div class="row"><input type="number" id="mins" value="1" min="0" max="30" aria-label="Minutes"><input type="number" id="secs" value="0" min="0" max="59" aria-label="Seconds"><button class="btn sm" id="set">Set</button></div>
+<div class="row"><button class="btn sm" id="go">Start</button><button class="btn sm ghost" id="pause">Pause</button><button class="btn sm ghost" id="reset">Reset</button></div></div>
+
+<div class="card"><h3>Speakers list</h3>
+<div class="row"><input class="grow" id="sp" placeholder="Country name"><button class="btn sm" id="add">Add</button></div>
+<ol class="list" id="spl"></ol><p id="spe">No speakers yet.</p></div>
+
+<div class="card"><h3>Voting calculator</h3>
+<div class="row"><input type="number" id="y" min="0" placeholder="Yes"><input type="number" id="n" min="0" placeholder="No"><input type="number" id="a" min="0" placeholder="Abstain"></div>
+<div class="row"><button class="btn sm" id="calc">Calculate</button></div>
+<div class="res" id="out">Enter votes to see the result.</div></div>
+</div></div></section>
+
+<section id="guides"><div class="wrap">
+<div class="eyebrow">Guides</div><h2>Prepare with a clear structure</h2>
+<div class="tabs" role="tablist">
+<button class="tab on" data-p="p1">Research</button><button class="tab" data-p="p2">Position paper</button><button class="tab" data-p="p3">Speeches</button><button class="tab" data-p="p4">Resolutions</button></div>
+
+<div class="pane on" id="p1"><div class="steps">
+<div class="step"><b>1</b><div><h3>Understand the topic</h3><p>Read the background guide fully, then define key terms and the core disagreement.</p></div></div>
+<div class="step"><b>2</b><div><h3>Study your country</h3><p>Note its government, economy, alliances and interests as they relate to the agenda.</p></div></div>
+<div class="step"><b>3</b><div><h3>Trace past UN action</h3><p>Find relevant resolutions, treaties and votes, and how your country voted.</p></div></div>
+<div class="step"><b>4</b><div><h3>Map the blocs</h3><p>List likely allies, opponents and swing states, and what each wants.</p></div></div>
+<div class="step"><b>5</b><div><h3>Record your sources</h3><p>Keep a note of every document and statistic so you can cite it in committee.</p></div></div></div></div>
+
+<div class="pane" id="p2"><div class="steps">
+<div class="step"><b>1</b><div><h3>Topic background (about 100 words)</h3><p>Show you understand the issue and why it matters internationally.</p></div></div>
+<div class="step"><b>2</b><div><h3>Past actions by your country (about 150 words)</h3><p>Cite treaties, votes and statements that show a consistent position.</p></div></div>
+<div class="step"><b>3</b><div><h3>Your country’s policy (about 150 words)</h3><p>State what your country wants and the reasoning behind it.</p></div></div>
+<div class="step"><b>4</b><div><h3>Proposed solutions (about 150 words)</h3><p>Offer specific, realistic actions the committee could adopt.</p></div></div></div>
+<div class="note">Write in your country’s voice, stay specific and avoid claims you cannot source.</div></div>
+
+<div class="pane" id="p3"><div class="steps">
+<div class="step"><b>1</b><div><h3>Hook</h3><p>Open with one striking fact or question that frames your position.</p></div></div>
+<div class="step"><b>2</b><div><h3>Position</h3><p>Say clearly what your country believes and why, in one or two sentences.</p></div></div>
+<div class="step"><b>3</b><div><h3>Proposal</h3><p>Name one concrete solution and invite others to collaborate.</p></div></div>
+<div class="step"><b>4</b><div><h3>Close</h3><p>End with a call to action. Always finish inside your time.</p></div></div></div></div>
+
+<div class="pane" id="p4"><div class="steps">
+<div class="step"><b>1</b><div><h3>Heading and sponsors</h3><p>Committee, topic, sponsors and signatories.</p></div></div>
+<div class="step"><b>2</b><div><h3>Preambulatory clauses</h3><p>Set context using phrases such as “Recalling”, “Noting” and “Deeply concerned”. End each with a comma.</p></div></div>
+<div class="step"><b>3</b><div><h3>Operative clauses</h3><p>Start with an action verb such as “Urges” or “Calls upon”. Number each clause and end it with a semicolon.</p></div></div>
+<div class="step"><b>4</b><div><h3>Build consensus</h3><p>Combine ideas across blocs so your draft attracts signatories and votes.</p></div></div></div></div>
+</div></section>
+
+<section class="alt" id="rules"><div class="wrap">
+<div class="eyebrow">Rules of procedure</div><h2>Know the motions</h2>
+<p class="lead">Rules vary by conference, so always check your own rules. These are common ones.</p>
+<div class="gl">
+<div><b>Roll call</b><p>Attendance is taken and delegates confirm their presence.</p></div>
+<div><b>General Speakers’ List (GSL)</b><p>The default list of speeches on the agenda.</p></div>
+<div><b>Moderated caucus</b><p>Short timed speeches on a narrow sub-topic.</p></div>
+<div><b>Unmoderated caucus</b><p>Free time to negotiate and write working papers.</p></div>
+<div><b>Point of order</b><p>Raised when a rule of procedure appears to be broken.</p></div>
+<div><b>Point of information</b><p>A question to a speaker after their speech.</p></div>
+<div><b>Right of reply</b><p>Responding to a remark that questioned your country’s integrity.</p></div>
+<div><b>Division of the question</b><p>Voting on clauses of a resolution separately.</p></div>
+</div></div></section>
+
+<section class="alt" id="quiz"><div class="wrap" style="text-align:center"><div class="eyebrow">30-second quiz</div><h2>What kind of delegate are you?</h2><p class="lead" style="margin:0 auto">Answer three quick questions and get a prep plan that fits you.</p><div class="card quiz" id="qz" style="text-align:left"></div></div></section>
+<section id="pricing"><div class="wrap">
+<div class="eyebrow">Services & pricing</div><h2>Free to learn. Pay only for personal help.</h2>
+<p class="lead">The guides and committee tools stay free. Book a service when you want an expert’s eyes on your work.</p>
+<div class="perks"><div><b>UPI-first</b><span>Pay with GPay, PhonePe, Paytm, cards or net banking.</span></div><div><b>Student code</b><span>Use STUDENT10 at checkout for 10% off.</span></div><div><b>Parent can pay</b><span>Send the order to a parent on WhatsApp in one tap.</span></div><div><b>No account needed</b><span>Just your name and email.</span></div></div>
+<div class="price">
+<div class="card plan"><h3>Free Toolkit</h3><div class="amt">₹0</div><ul><li>All guides and templates</li><li>Timer, speakers list, vote calculator</li><li>Rules of procedure glossary</li></ul><a class="btn ghost" href="#tools" style="text-align:center">Use for free</a></div>
+<div class="card plan"><h3>Quick Speech Check</h3><div class="amt">₹99</div><ul><li>Written notes on your opening speech</li><li>Hook, structure and timing tips</li><li>Returned within 24 hours</li></ul><button class="btn buy" data-s="quick">Get speech check</button></div>
+<div class="card plan pop"><span class="badge">Most popular</span><h3>Position Paper Review</h3><div class="amt">₹499</div><ul><li>Line-by-line written feedback</li><li>Structure and sourcing check</li><li>Returned within 48 hours</li></ul><button class="btn buy" data-s="paper">Buy now</button></div>
+
+<div class="card plan"><h3>Rebuttal &amp; POI Pack</h3><div class="amt">₹199</div><ul><li>10 likely questions on your topic</li><li>Model answers and counter-arguments</li><li>Delivered within 48 hours</li></ul><button class="btn buy" data-s="poi">Get the pack</button></div>
+<div class="card plan"><h3>Resolution Review</h3><div class="amt">₹299</div><ul><li>Clause-by-clause feedback</li><li>Fixes for wording and structure</li><li>Tips to win sponsors and signatories</li></ul><button class="btn buy" data-s="resolution">Get my review</button></div>
+<div class="card plan"><h3>Country Research Brief</h3><div class="amt">₹399</div><ul><li>Your country’s position and past votes</li><li>Likely allies and opponents</li><li>Sources you can cite in committee</li></ul><button class="btn buy" data-s="brief">Get my brief</button></div>
+<div class="card plan"><h3>Speech + Paper Bundle</h3><div class="amt">₹549</div><ul><li>Quick Speech Check + Paper Review</li><li>Feedback on both your speech and your paper</li><li>Save ₹49 vs buying separately</li></ul><button class="btn buy" data-s="bundle">Get bundle</button></div>
+<div class="card plan pop"><span class="badge">Best value</span><h3>Full Prep Package</h3><div class="amt">₹1,199</div><ul><li>Country brief, paper review and resolution review</li><li>Speech check and Rebuttal &amp; POI Pack</li><li>Save ₹296 vs buying separately</li></ul><button class="btn buy" data-s="full">Get the package</button></div>
+
+</div>
+<p class="sec">🔒 Payments are handled on a secure checkout page. We never store card or UPI details.</p>
+</div></section>
+<section id="payment" style="padding-top:10px"><div class="wrap">
+<div class="eyebrow">Payment details</div><h2>Simple, safe and student-friendly</h2>
+<div class="grid">
+<div class="card"><div class="ic">💳</div><h3>Accepted methods</h3><p>UPI (GPay, PhonePe, Paytm), debit and credit cards, and net banking. All prices are in Indian rupees (₹).</p></div>
+<div class="card"><div class="ic">🧾</div><h3>How it works</h3><p>Pick a service, enter your name and email, then pay by UPI. Keep your transaction ID, and your order is confirmed by email once the payment is received.</p></div>
+<div class="card"><div class="ic">⏱️</div><h3>Delivery times</h3><p>Speech checks come back within 24 hours, papers, resolutions and POI packs within 48 hours, and research briefs within 3 days.</p></div>
+<div class="card"><div class="ic">↩️</div><h3>Refunds</h3><p>Full refund if your service hasn’t started. After that, we handle refunds case by case.</p></div>
+<div class="card"><div class="ic">🎓</div><h3>Student savings</h3><p>Use code STUDENT10 for 10% off, or ask a parent to pay with one tap on WhatsApp.</p></div>
+<div class="card"><div class="ic">🔒</div><h3>Your data</h3><p>We never see or store your card or UPI details. Payments are handled by the payment provider.</p></div>
+</div>
+<div class="upi" id="upibox" hidden><div>Pay by UPI to <code id="upiid"></code> <span id="upin"></span></div><button class="btn sm ghost" id="cpy">Copy UPI ID</button></div>
+<p class="sec" id="sup" hidden></p>
+</div></section>
+<dialog id="dlg"><h3>Complete your order</h3>
+<div class="sum"><span id="sn"></span><span id="sp2"></span></div>
+<div class="meth"><span>UPI</span><span>GPay</span><span>PhonePe</span><span>Paytm</span><span>Cards</span><span>Net banking</span></div>
+<label for="pc">Student code (optional)</label>
+<div class="row"><input class="grow" id="pc" placeholder="Try STUDENT10"><button class="btn sm ghost" id="ap">Apply</button></div>
+<label for="cn">Full name</label><input id="cn" autocomplete="name">
+<label for="ce">Email</label><input id="ce" type="email" autocomplete="email">
+<div class="row" style="margin-top:18px"><button class="btn" id="pay">Pay now</button><button class="btn ghost" id="cx">Cancel</button></div>
+<button class="btn ghost" id="par" style="width:100%;margin-top:10px">👪 Ask a parent to pay (WhatsApp)</button>
+<div id="pm"></div></dialog>
+
+<section id="faq"><div class="wrap">
+<div class="eyebrow">Questions</div><h2>FAQ</h2>
+<details><summary>I’m a first-timer. Where do I start?</summary><p>Read your background guide, research your country, and write a short opening speech. Then use the timer to practise.</p></details>
+<details><summary>How long should a position paper be?</summary><p>Most conferences ask for one page. Check your own conference’s guidelines.</p></details>
+<details><summary>What majority do votes need?</summary><p>Procedural votes usually need a simple majority, while substantive votes depend on your committee’s rules. Use the calculator for both.</p></details>
+<details><summary>How do payments work?</summary><p>Choose a service, enter your name and email, and you’ll be taken to a secure checkout page to pay by UPI, card or net banking. You’ll get a confirmation email afterwards.</p></details>
+<details><summary>Can I get a refund?</summary><p>If a service hasn’t started, you can request a full refund by email. Once feedback is delivered, refunds are handled case by case.</p></details>
+<details><summary>How do I stand out in committee?</summary><p>Speak with evidence, listen to others, build blocs and propose realistic solutions rather than just making speeches.</p></details>
+</div></section>
+
+<section class="cta"><div class="wrap"><h2>Know a delegate who needs this?</h2><p class="lead" style="margin:0 auto 24px">Share Gavelume with your team, club or school group.</p><button class="btn" id="shr">Share on WhatsApp</button></div></section>
+<div class="tabbar" role="navigation" aria-label="App navigation"><a href="#top">🏠<span>Home</span></a><a href="#tools">⏱️<span>Tools</span></a><a href="#guides">📖<span>Guides</span></a><a href="#pricing">💳<span>Services</span></a><a href="#faq">❓<span>FAQ</span></a></div>
+<footer><div class="wrap">Gavelume · Built for delegates, by delegates. © 2026<br>Built by <b>Hasini Gowda</b></div></footer>
+
+<script>
+const $=id=>document.getElementById(id);
+let total=60,left=60,iv=null;
+function draw(){const m=String(Math.floor(left/60)).padStart(2,'0'),s=String(left%60).padStart(2,'0');$('clk').textContent=m+':'+s;$('clk').classList.toggle('low',left<=10&&left>0)}
+function stop(){clearInterval(iv);iv=null}
+$('set').onclick=()=>{stop();total=left=Math.min(1800,(+$('mins').value||0)*60+(+$('secs').value||0));draw()};
+$('go').onclick=()=>{if(iv||left<=0)return;iv=setInterval(()=>{left--;draw();if(left<=0)stop()},1000)};
+$('pause').onclick=stop;
+$('reset').onclick=()=>{stop();left=total;draw()};
+const sp=[];
+function rl(){const l=$('spl');l.innerHTML='';sp.forEach((c,i)=>{const li=document.createElement('li');const t=document.createElement('span');t.textContent=c;const b=document.createElement('button');b.textContent='✕';b.setAttribute('aria-label','Remove '+c);b.onclick=()=>{sp.splice(i,1);rl()};li.append(t,b);l.append(li)});$('spe').style.display=sp.length?'none':'block'}
+function addS(){const v=$('sp').value.trim();if(v){sp.push(v);$('sp').value='';rl()}}
+$('add').onclick=addS;$('sp').onkeydown=e=>{if(e.key==='Enter')addS()};
+$('calc').onclick=()=>{const y=+$('y').value||0,n=+$('n').value||0,a=+$('a').value||0,p=y+n,t=p+a;
+if(!t){$('out').textContent='Enter votes to see the result.';return}
+$('out').innerHTML='Present and voting: '+p+' · Total present: '+t+'<br>Simple majority (more than half of those voting): '+(y>p/2?'Passes':'Fails')+'<br>Two-thirds majority: '+(p>0&&y>=Math.ceil(p*2/3)?'Passes':'Fails')+'<br>Majority of all present: '+(y>t/2?'Passes':'Fails')};
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.pane').forEach(e=>e.classList.remove('on'));b.classList.add('on');$(b.dataset.p).classList.add('on')});
+const PAY={quick:'',paper:'',bundle:'',poi:'',resolution:'',brief:'',full:''}; // paste your payment-link URLs here (e.g. Razorpay or Stripe)
+const SV={quick:['Quick Speech Check',99],paper:['Position Paper Review',499],bundle:['Speech + Paper Bundle',549],poi:['Rebuttal & POI Pack',199],resolution:['Resolution Review',299],brief:['Country Research Brief',399],full:['Full Prep Package',1199]};
+let disc=0;const fmt=n=>'₹'+n.toLocaleString('en-IN');
+function render(){const p=SV[cur][1],t=Math.round(p*(1-disc));$('sp2').innerHTML=disc?'<s style="color:var(--mute);font-weight:400">'+fmt(p)+'</s> '+fmt(t):fmt(p)}
+let cur=null;const dlg=$('dlg');
+document.querySelectorAll('.buy').forEach(b=>b.onclick=()=>{cur=b.dataset.s;$('sn').textContent=SV[cur][0];disc=0;$('pc').value='';render();$('pm').textContent='';dlg.showModal()});
+const UPI={id:'9880129337@fam',name:'',contact:''}; // add your UPI ID, payee name and support email or WhatsApp here
+if(UPI.id){$('upibox').hidden=false;$('upiid').textContent=UPI.id;$('upin').textContent=UPI.name?'('+UPI.name+')':''}
+if(UPI.contact){$('sup').hidden=false;$('sup').textContent='Questions about a payment? Contact '+UPI.contact}
+$('cpy').onclick=()=>{try{navigator.clipboard.writeText(UPI.id);$('cpy').textContent='Copied'}catch(e){}};
+const QZ=[{q:'It’s the night before committee. What are you doing?',o:['Practising my speech out loud','Polishing my paper and clauses','Digging through voting records','Drafting tough questions for rivals']},{q:'Which compliment would you love most?',o:['“Great speech!”','“Brilliant resolution!”','“You know your facts cold!”','“Amazing question!”']},{q:'What worries you most?',o:['Freezing when I speak','Weak writing','Missing key facts','Being out-argued']}];
+const RS=[{t:'The Orator',d:'You win rooms with your voice. Sharpen your hook and timing with a Quick Speech Check ('+fmt(SV.quick[1])+').'},{t:'The Drafter',d:'You shape outcomes on paper. Get a Position Paper Review ('+fmt(SV.paper[1])+') or a Resolution Review ('+fmt(SV.resolution[1])+').'},{t:'The Strategist',d:'You win on facts. A Country Research Brief ('+fmt(SV.brief[1])+') gives you sources, allies and past votes.'},{t:'The Debater',d:'You thrive in the cross-fire. The Rebuttal & POI Pack ('+fmt(SV.poi[1])+') arms you with answers.'}];
+let qi=0,sc=[0,0,0,0];
+function qshow(){const b=$('qz');
+if(qi>=QZ.length){const r=RS[sc.indexOf(Math.max(...sc))];
+b.innerHTML='<div class="qr"><div class="eyebrow">Your result</div><h3>'+r.t+'</h3><p style="color:var(--mute)">'+r.d+'</p><div class="row"><a class="btn" href="#pricing">See my service</a><button class="btn ghost" id="qs">Share my result</button><button class="btn ghost" id="qa">Retake</button></div></div>';
+$('qs').onclick=()=>window.open('https://wa.me/?text='+encodeURIComponent('I’m '+r.t+' on Gavelume! Find your delegate style: '+location.href),'_blank','noopener');
+$('qa').onclick=()=>{qi=0;sc=[0,0,0,0];qshow()};return}
+const q=QZ[qi];
+b.innerHTML='<div class="qp"><i style="width:'+(qi/QZ.length*100)+'%"></i></div><div class="qq">'+q.q+'</div><div class="opts">'+q.o.map((t,i)=>'<button class="opt" data-i="'+i+'">'+t+'</button>').join('')+'</div>';
+b.querySelectorAll('.opt').forEach(x=>x.onclick=()=>{sc[+x.dataset.i]++;qi++;qshow()})}
+qshow();
+$('shr').onclick=()=>window.open('https://wa.me/?text='+encodeURIComponent('Prepping for Model UN? Check out Gavelume: free tools, guides and quick expert feedback. '+location.href),'_blank','noopener');
+(function(){const r=document.documentElement;let m=null;try{m=localStorage.getItem('dc-theme')}catch(e){}
+function ap(t){r.setAttribute('data-theme',t);$('tg').textContent=t==='dark'?'☀️':'🌙';const mt=document.querySelector('meta[name=theme-color]');if(mt)mt.content=t==='dark'?'#0c1726':'#4a9eea'}
+ap(m==='dark'?'dark':'light');
+$('tg').onclick=()=>{const n=r.getAttribute('data-theme')==='dark'?'light':'dark';ap(n);try{localStorage.setItem('dc-theme',n)}catch(e){}}})();
+$('cx').onclick=()=>dlg.close();
+$('ap').onclick=()=>{const c=$('pc').value.trim().toUpperCase();if(c==='STUDENT10'){disc=.1;$('pm').textContent='Student code applied: 10% off.'}else{disc=0;$('pm').textContent=c?'That code isn’t valid.':''}render()};
+$('par').onclick=()=>{const t=Math.round(SV[cur][1]*(1-disc));const m='Hi! I’d like to book “'+SV[cur][0]+'” on Gavelume for '+fmt(t)+'. Could you please pay for it? '+location.href;window.open('https://wa.me/?text='+encodeURIComponent(m),'_blank','noopener')};
+$('pay').onclick=()=>{const n=$('cn').value.trim(),e=$('ce').value.trim();
+if(!n||!/^\S+@\S+\.\S+$/.test(e)){$('pm').textContent='Please enter your name and a valid email.';return}
+if(!PAY[cur]){if(UPI.id){const t=Math.round(SV[cur][1]*(1-disc));const mob=/Android|iPhone|iPad|iPod/i.test(navigator.userAgent);$('pm').textContent=mob?'If your UPI app didn’t open, pay '+fmt(t)+' to '+UPI.id+' and keep the transaction ID to confirm your order.':'On a laptop, open any UPI app on your phone and pay '+fmt(t)+' to '+UPI.id+'. Keep the transaction ID to confirm your order.';if(!mob)return;location.href='upi://pay?pa='+encodeURIComponent(UPI.id)+'&pn='+encodeURIComponent(UPI.name||'Gavelume')+'&am='+t+'&cu=INR&tn='+encodeURIComponent(SV[cur][0]+' - '+n);return}$('pm').textContent='Checkout isn’t connected yet.';return}
+window.open(PAY[cur],'_blank','noopener');dlg.close()};
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.card,.step,.gl div,details').forEach(el=>{el.classList.add('rv');io.observe(el)})}
+rl();draw();
+</script>
+</body>
+</html>
